@@ -110,9 +110,10 @@ export default function Home() {
                   Suyash Sawant
                 </span>
               </h1>
-              <p className="text-sm md:text-base text-white/60 max-w-md mx-auto">
+              <br />
+              {/* <p className="text-sm md:text-base text-white/60 max-w-md mx-auto">
                 Turning messy worklows into seamless experiences.
-              </p>
+              </p> */}
             </div>
           }
         >
