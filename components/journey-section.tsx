@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { ContainerScroll, CardSticky } from "@/components/ui/cards-stack";
 
 const ACADEMIC = [
@@ -78,8 +79,14 @@ const PROFESSIONAL = [
 ];
 
 export function JourneySection() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
-    <section id="journey" className="w-full bg-zinc-50">
+    <section
+      id="journey"
+      ref={sectionRef}
+      className="relative w-full"
+    >
       {/* Section header */}
       <div className="text-center pt-20 pb-4 px-6 space-y-3">
         <p className="text-sm font-medium text-zinc-400 uppercase tracking-widest">
@@ -117,10 +124,12 @@ export function JourneySection() {
                 index={index + 2}
                 incrementY={14}
                 incrementZ={10}
-                className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm"
+                className="relative overflow-hidden rounded-2xl border border-white/80 bg-white/20 p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/50"
               >
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 via-transparent to-white/10" />
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <span className="text-4xl font-bold text-zinc-100">
+                  <span className="text-4xl font-bold text-zinc-600">
                     {item.number}
                   </span>
                   <span className="text-xs font-medium text-zinc-400 tracking-widest uppercase mt-1">
@@ -168,10 +177,12 @@ export function JourneySection() {
                 index={index + 1}
                 incrementY={12}
                 incrementZ={8}
-                className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm"
+                className="relative overflow-hidden rounded-2xl border border-white/80 bg-white/20 p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/50"
               >
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 via-transparent to-white/10" />
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <span className="text-4xl font-bold text-zinc-100">
+                  <span className="text-4xl font-bold text-zinc-600">
                     {item.number}
                   </span>
                   <span className="text-xs font-medium text-zinc-400 tracking-widest uppercase mt-1">

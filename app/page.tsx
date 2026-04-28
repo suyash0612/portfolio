@@ -5,6 +5,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CardStack, CardStackItem } from "@/components/ui/card-stack";
 import { SocialLinks } from "@/components/ui/social-links";
 import { JourneySection } from "@/components/journey-section";
+import { BottomNavBar } from "@/components/ui/bottom-nav-bar";
 
 const projects: CardStackItem[] = [
   {
@@ -69,6 +70,9 @@ export default function Home() {
     <main className="relative bg-white text-zinc-900">
       {/* Social Links — fixed sidebar (desktop) + floating dock (mobile) */}
       <SocialLinks links={socialLinks} showOnMobile floatingButtonColor="bg-zinc-800" />
+
+      {/* Bottom nav — centered pill, fixed above mobile social dock */}
+      <BottomNavBar />
 
       {/* ── Hero Section ── */}
       {/* overflow-x-hidden scoped here so it doesn't create a scroll container on main,
