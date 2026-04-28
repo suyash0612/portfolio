@@ -102,7 +102,7 @@ export default function Home() {
           titleComponent={
             <div className="space-y-3">
               <p className="text-base md:text-lg font-medium text-white/50 uppercase tracking-widest">
-                {/* Designation */}
+                Applied AI and Analytics Engineer
               </p>
               <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
                 Hi, I&apos;m{" "}
