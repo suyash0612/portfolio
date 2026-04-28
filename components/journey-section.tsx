@@ -124,10 +124,10 @@ export function JourneySection() {
                 index={index + 2}
                 incrementY={14}
                 incrementZ={10}
-                className="relative overflow-hidden rounded-2xl border border-white/5 bg-white/5 p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/5"
+                className="relative overflow-hidden rounded-2xl border border-white/[2%] bg-white/[2%] p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/[2%]"
               >
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
-                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/[2%] via-transparent to-transparent" />
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <span className="text-4xl font-bold text-white/50">
                     {item.number}
@@ -177,10 +177,10 @@ export function JourneySection() {
                 index={index + 1}
                 incrementY={12}
                 incrementZ={8}
-                className="relative overflow-hidden rounded-2xl border border-white/5 bg-white/5 p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/5"
+                className="relative overflow-hidden rounded-2xl border border-white/[2%] bg-white/[2%] p-8 shadow-[0_8px_40px_rgba(0,0,0,0.01)] backdrop-blur-2xl ring-1 ring-inset ring-white/[2%]"
               >
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
-                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/[2%] via-transparent to-transparent" />
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <span className="text-4xl font-bold text-white/50">
                     {item.number}
