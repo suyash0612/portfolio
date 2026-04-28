@@ -314,3 +314,56 @@ Steps to integrate
  1. Install external dependencies
  2. Fill image assets with Unsplash stock images you know exist
  3. Use lucide-react icons for svgs or logos if component requires them
+
+
+# Actual Content for process phases
+# Academic Journey
+
+01
+M.S in Business Analytics
+University Of Illinois Urbana Champaign
+2025-2026
+GPA - 3.92*
+
+02
+B.E. in Electronics and Telecommunication
+Mumbai University
+2017-2021
+CGPA - 8.93
+
+
+# Professional Journey
+
+01   AWG - Business Practicum
+Commerical Analytics
+
+2025
+
+02   Bosch - Business Practicum
+Requirement gathering, gap analysis,  process improvements
+
+2025
+
+03   Digital Risk Accessibility
+Measured and improved digital inclusivity by mapping accessibility gaps to user engagement metrics, resulting in a 15% uplift in screen-reader session completion.
+
+2023-2025
+
+04   DigiplusIT
+Optimized telecom event data, led building data pipelines that fed dashboards
+
+2022-2023
+
+05   Primemover Engineering Pvt Ltd
+Conducted data extraction and validations, integrated APIs, data analytics
+
+2021-2022
+
+06   Tata Consultancy & Services
+Developed and maintained automated validation flows and payment monitoring 
+pipelines
+
+2021-2022
+
+07   Eduvance Pvt Ltd
+Data Analytics Internship

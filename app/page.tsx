@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CardStack, CardStackItem } from "@/components/ui/card-stack";
 import { SocialLinks } from "@/components/ui/social-links";
+import { JourneySection } from "@/components/journey-section";
 
 const projects: CardStackItem[] = [
   {
@@ -65,12 +66,14 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <main className="relative bg-white text-zinc-900 overflow-x-hidden">
+    <main className="relative bg-white text-zinc-900">
       {/* Social Links — fixed sidebar (desktop) + floating dock (mobile) */}
       <SocialLinks links={socialLinks} showOnMobile floatingButtonColor="bg-zinc-800" />
 
       {/* ── Hero Section ── */}
-      <section id="hero" className="w-full">
+      {/* overflow-x-hidden scoped here so it doesn't create a scroll container on main,
+          which would break position:sticky in the Journey section below */}
+      <section id="hero" className="w-full overflow-x-hidden">
         <ContainerScroll
           titleComponent={
             <div className="space-y-3">
@@ -122,7 +125,7 @@ export default function Home() {
       {/* ── Projects Section ── */}
       <section
         id="projects"
-        className="w-full py-20 md:py-32 px-6"
+        className="w-full py-20 md:py-32 px-6 overflow-x-hidden"
       >
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
@@ -151,6 +154,9 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* ── Journey Section ── */}
+      <JourneySection />
 
       {/* ── Footer ── */}
       <footer className="border-t border-zinc-100 py-8 px-6 text-center">
