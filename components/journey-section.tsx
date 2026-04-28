@@ -89,10 +89,10 @@ export function JourneySection() {
     >
       {/* Section header */}
       <div className="text-center pt-20 pb-4 px-6 space-y-3">
-        <p className="text-sm font-medium text-zinc-400 uppercase tracking-widest">
+        <p className="text-sm font-medium text-white/50 uppercase tracking-widest">
           Background
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
           My Journey
         </h2>
       </div>
@@ -102,16 +102,16 @@ export function JourneySection() {
         <div className="grid md:grid-cols-2 md:gap-8 xl:gap-16">
           {/* Sticky left label */}
           <div className="md:sticky md:top-0 md:h-svh flex flex-col justify-center py-12">
-            <p className="text-xs font-medium text-zinc-400 uppercase tracking-widest mb-3">
+            <p className="text-xs font-medium text-white/50 uppercase tracking-widest mb-3">
               Education
             </p>
-            <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Academic{" "}
-              <span className="bg-gradient-to-r from-zinc-700 to-zinc-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent">
                 Journey
               </span>
             </h3>
-            <p className="text-zinc-500 text-sm max-w-xs">
+            <p className="text-white/60 text-sm max-w-xs">
               Formal training in engineering and data-driven decision making.
             </p>
           </div>
@@ -129,18 +129,18 @@ export function JourneySection() {
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
                 <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 via-transparent to-white/10" />
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <span className="text-4xl font-bold text-zinc-600">
+                  <span className="text-4xl font-bold text-white/50">
                     {item.number}
                   </span>
-                  <span className="text-xs font-medium text-zinc-400 tracking-widest uppercase mt-1">
+                  <span className="text-xs font-medium text-white/40 tracking-widest uppercase mt-1">
                     {item.period}
                   </span>
                 </div>
-                <h4 className="text-xl font-bold text-zinc-900 mb-1">
+                <h4 className="text-xl font-bold text-white mb-1">
                   {item.degree}
                 </h4>
-                <p className="text-zinc-500 text-sm mb-4">{item.institution}</p>
-                <span className="inline-block bg-zinc-900 text-white text-xs font-medium px-3 py-1 rounded-full">
+                <p className="text-white/60 text-sm mb-4">{item.institution}</p>
+                <span className="inline-block bg-white/10 text-white text-xs font-medium px-3 py-1 rounded-full">
                   {item.metric}
                 </span>
               </CardSticky>
@@ -150,20 +150,20 @@ export function JourneySection() {
       </div>
 
       {/* ── Professional ── */}
-      <div className="container mx-auto px-6 xl:px-12 py-12 border-t border-zinc-200">
+      <div className="container mx-auto px-6 xl:px-12 py-12 border-t border-white/10">
         <div className="grid md:grid-cols-2 md:gap-8 xl:gap-16">
           {/* Sticky left label */}
           <div className="md:sticky md:top-0 md:h-svh flex flex-col justify-center py-12">
-            <p className="text-xs font-medium text-zinc-400 uppercase tracking-widest mb-3">
+            <p className="text-xs font-medium text-white/50 uppercase tracking-widest mb-3">
               Work
             </p>
-            <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Professional{" "}
-              <span className="bg-gradient-to-r from-zinc-700 to-zinc-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent">
                 Experience
               </span>
             </h3>
-            <p className="text-zinc-500 text-sm max-w-xs">
+            <p className="text-white/60 text-sm max-w-xs">
               Roles spanning analytics, data engineering, and AI — across
               consulting, tech, and research.
             </p>
@@ -182,17 +182,17 @@ export function JourneySection() {
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
                 <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 via-transparent to-white/10" />
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <span className="text-4xl font-bold text-zinc-600">
+                  <span className="text-4xl font-bold text-white/50">
                     {item.number}
                   </span>
-                  <span className="text-xs font-medium text-zinc-400 tracking-widest uppercase mt-1">
+                  <span className="text-xs font-medium text-white/40 tracking-widest uppercase mt-1">
                     {item.period}
                   </span>
                 </div>
-                <h4 className="text-xl font-bold text-zinc-900 mb-3">
+                <h4 className="text-xl font-bold text-white mb-3">
                   {item.company}
                 </h4>
-                <p className="text-zinc-500 text-sm leading-relaxed">
+                <p className="text-white/60 text-sm leading-relaxed">
                   {item.detail}
                 </p>
               </CardSticky>

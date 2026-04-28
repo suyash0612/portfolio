@@ -100,6 +100,8 @@ export function CardStack<T extends CardStackItem>({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
+  const isDragging = React.useRef(false);
+
   const maxOffset = Math.max(0, Math.floor(maxVisible / 2));
   const cardSpacing = Math.max(10, Math.round(cardWidth * (1 - overlap)));
   const stepDeg = maxOffset > 0 ? spreadDeg / maxOffset : 0;
@@ -205,6 +207,7 @@ export function CardStack<T extends CardStackItem>({
                     drag: "x" as const,
                     dragConstraints: { left: 0, right: 0 },
                     dragElastic: 0.18,
+                    onDragStart: () => { isDragging.current = true; },
                     onDragEnd: (
                       _e: MouseEvent | TouchEvent | PointerEvent,
                       info: PanInfo,
@@ -215,6 +218,7 @@ export function CardStack<T extends CardStackItem>({
                       const threshold = Math.min(160, cardWidth * 0.22);
                       if (travel > threshold || v > 650) prev();
                       else if (travel < -threshold || v < -650) next();
+                      setTimeout(() => { isDragging.current = false; }, 0);
                     },
                   }
                 : {};
@@ -260,7 +264,14 @@ export function CardStack<T extends CardStackItem>({
                     stiffness: springStiffness,
                     damping: springDamping,
                   }}
-                  onClick={() => setActive(i)}
+                  onClick={() => {
+                    if (isDragging.current) return;
+                    if (isActive && item.href) {
+                      window.open(item.href, "_blank", "noreferrer");
+                    } else {
+                      setActive(i);
+                    }
+                  }}
                   {...dragProps}
                 >
                   <div
@@ -295,8 +306,8 @@ export function CardStack<T extends CardStackItem>({
                   className={cn(
                     "h-2 w-2 rounded-full transition",
                     on
-                      ? "bg-foreground"
-                      : "bg-foreground/30 hover:bg-foreground/50",
+                      ? "bg-white"
+                      : "bg-white/30 hover:bg-white/50",
                   )}
                   aria-label={`Go to ${it.title}`}
                 />
@@ -308,7 +319,7 @@ export function CardStack<T extends CardStackItem>({
               href={activeItem.href}
               target="_blank"
               rel="noreferrer"
-              className="text-muted-foreground hover:text-foreground transition"
+              className="text-white/50 hover:text-white transition"
               aria-label="Open link"
             >
               <SquareArrowOutUpRight className="h-4 w-4" />

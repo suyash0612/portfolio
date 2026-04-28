@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CardStack, CardStackItem } from "@/components/ui/card-stack";
@@ -7,6 +8,7 @@ import { SocialLinks } from "@/components/ui/social-links";
 import { JourneySection } from "@/components/journey-section";
 import { CalBooking } from "@/components/cal-booking";
 import { BottomNavBar } from "@/components/ui/bottom-nav-bar";
+import { WebGLShader } from "@/components/ui/web-gl-shader";
 
 const projects: CardStackItem[] = [
   {
@@ -67,8 +69,25 @@ const socialLinks = [
 ];
 
 export default function Home() {
+  const [cardDims, setCardDims] = useState({ width: 480, height: 300, spreadDeg: 48, maxVisible: 7 });
+
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      if (w < 640) {
+        setCardDims({ width: Math.min(w - 48, 320), height: 220, spreadDeg: 20, maxVisible: 3 });
+      } else {
+        setCardDims({ width: 480, height: 300, spreadDeg: 48, maxVisible: 7 });
+      }
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   return (
-    <main className="relative bg-white text-zinc-900">
+    <main className="relative text-white">
+      <WebGLShader />
       {/* Social Links — fixed sidebar (desktop) + floating dock (mobile) */}
       <SocialLinks links={socialLinks} showOnMobile floatingButtonColor="bg-zinc-800" />
 
@@ -82,16 +101,16 @@ export default function Home() {
         <ContainerScroll
           titleComponent={
             <div className="space-y-3">
-              <p className="text-base md:text-lg font-medium text-zinc-500 uppercase tracking-widest">
+              <p className="text-base md:text-lg font-medium text-white/50 uppercase tracking-widest">
                 {/* Designation */}
               </p>
-              <h1 className="text-4xl md:text-7xl font-bold text-zinc-900 leading-tight">
+              <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
                 Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-zinc-700 to-zinc-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
                   Suyash Sawant
                 </span>
               </h1>
-              <p className="text-sm md:text-base text-zinc-500 max-w-md mx-auto">
+              <p className="text-sm md:text-base text-white/60 max-w-md mx-auto">
                 Turning messy worklows into seamless experiences.
               </p>
             </div>
@@ -109,14 +128,14 @@ export default function Home() {
         </ContainerScroll>
 
         <div className="flex flex-col items-center justify-center mt-10 animate-bounce">
-          <span className="text-xs md:text-sm text-zinc-400 tracking-widest uppercase">
+          <span className="text-xs md:text-sm text-white/50 tracking-widest uppercase">
             Scroll
           </span>
 
-          <div className="w-[1px] h-10 bg-gradient-to-b from-zinc-400 to-transparent my-2" />
+          <div className="w-[1px] h-10 bg-gradient-to-b from-white/50 to-transparent my-2" />
 
           <svg
-            className="w-5 h-5 text-zinc-400"
+            className="w-5 h-5 text-white/50"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -135,13 +154,13 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 space-y-3">
-            <p className="text-sm font-medium text-zinc-400 uppercase tracking-widest">
+            <p className="text-sm font-medium text-white/50 uppercase tracking-widest">
               Featured Work
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Projects
             </h2>
-            <p className="text-zinc-500 text-base max-w-xl mx-auto">
+            <p className="text-white/60 text-base max-w-xl mx-auto">
               A collection of engineering projects.
             </p>
           </div>
@@ -150,8 +169,10 @@ export default function Home() {
           <CardStack
             items={projects}
             initialIndex={0}
-            cardWidth={480}
-            cardHeight={300}
+            cardWidth={cardDims.width}
+            cardHeight={cardDims.height}
+            spreadDeg={cardDims.spreadDeg}
+            maxVisible={cardDims.maxVisible}
             autoAdvance
             intervalMs={2000}
             pauseOnHover
@@ -167,8 +188,8 @@ export default function Home() {
       <CalBooking />
 
       {/* ── Footer ── */}
-      <footer className="border-t border-zinc-100 py-8 px-6 text-center">
-        <p className="text-sm text-zinc-400">
+      <footer className="border-t border-white/10 py-8 px-6 text-center">
+        <p className="text-sm text-white/40">
           © {new Date().getFullYear()} Suyash Sawant · Built with Next.js &amp; Framer Motion
         </p>
       </footer>

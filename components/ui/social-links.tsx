@@ -155,7 +155,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
 
       {/* Mobile Floating Dock */}
       {showOnMobile && (
-        <div className="lg:hidden fixed bottom-6 right-6 z-50">
+        <div className="lg:hidden fixed bottom-20 right-6 z-50">
           {mobileDockOpen && (
             <div
               className="fixed inset-0 bg-black/20 backdrop-blur-sm"

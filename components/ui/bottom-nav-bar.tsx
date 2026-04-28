@@ -34,9 +34,9 @@ export function BottomNavBar({ className, defaultIndex = 0 }: BottomNavBarProps)
         // positioning
         "fixed inset-x-0 bottom-4 mx-auto z-40 w-fit",
         // shell
-        "bg-white border border-zinc-200 rounded-full",
+        "bg-black/40 backdrop-blur-md border border-white/10 rounded-full",
         "flex items-center p-1.5 gap-0.5",
-        "h-[52px] shadow-lg shadow-zinc-200/60",
+        "h-[52px] shadow-lg shadow-black/30",
         className,
       )}
     >
@@ -56,8 +56,8 @@ export function BottomNavBar({ className, defaultIndex = 0 }: BottomNavBarProps)
               "flex items-center px-3 py-2 rounded-full h-9 min-w-[40px]",
               "transition-colors duration-200 focus:outline-none select-none",
               isActive
-                ? "bg-zinc-900 text-white"
-                : "text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100",
+                ? "bg-white text-zinc-900"
+                : "text-white/50 hover:text-white hover:bg-white/10",
             )}
           >
             <Icon size={18} strokeWidth={2} aria-hidden className="shrink-0" />
