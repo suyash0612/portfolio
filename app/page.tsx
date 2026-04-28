@@ -63,7 +63,7 @@ const socialLinks = [
   { platform: "linkedin" as const, href: "https://linkedin.com/in/suyash-sawant" },
   { platform: "github" as const, href: "https://github.com/suyash0612" },
   { platform: "mail" as const, href: "mailto:suyashsawant1999@gmail.com" },
-  { platform: "instagram" as const, href: "https://instagram.com/suyash_sawant" },
+  { platform: "instagram" as const, href: "https://www.instagram.com/suyashsawant1999?igsh=MXdzcXQzazM3bWw1bQ==" },
 ];
 
 export default function Home() {
