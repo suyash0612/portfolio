@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Suyash Sawant — Portfolio",
+  title: "Suyash Portfolio",
   description:
-    "MSBA student & data scientist specializing in machine learning, NLP, and analytics.",
+    "MSBA student cum data engineer specializing in applied AI, analytics and engineering.",
   icons: {
     icon: "/assests/favicon.svg",
   },
