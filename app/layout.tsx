@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Suyash Sawant — Portfolio",
   description:
     "MSBA student & data scientist specializing in machine learning, NLP, and analytics.",
+  icons: {
+    icon: "/assests/favicon.svg",
+  },
 };
 
 export default function RootLayout({
