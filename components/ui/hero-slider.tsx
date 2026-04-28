@@ -7,6 +7,7 @@ import Image from "next/image";
 const SLIDES = [
   { src: "/assests/Cover.jpeg",  alt: "Suyash Sawant" },
   { src: "/assests/rest.jpeg",   alt: "Suyash Sawant" },
+  { src: "/assests/pub.jpeg",   alt: "Suyash Sawant" },
 ];
 
 const GAP = 12; // px between slides, mirrors iOS Photos
