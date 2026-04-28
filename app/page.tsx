@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CardStack, CardStackItem } from "@/components/ui/card-stack";
 import { SocialLinks } from "@/components/ui/social-links";
@@ -9,6 +8,7 @@ import { JourneySection } from "@/components/journey-section";
 import { CalBooking } from "@/components/cal-booking";
 import { BottomNavBar } from "@/components/ui/bottom-nav-bar";
 import { WebGLShader } from "@/components/ui/web-gl-shader";
+import { HeroSlider } from "@/components/ui/hero-slider";
 
 const projects: CardStackItem[] = [
   {
@@ -117,15 +117,7 @@ export default function Home() {
             </div>
           }
         >
-          <Image
-            src="/assests/Cover.jpeg"
-            alt="Suyash Sawant"
-            height={720}
-            width={1400}
-            className="mx-auto rounded-2xl object-contain h-full object-center"
-            draggable={false}
-            priority
-          />
+          <HeroSlider />
         </ContainerScroll>
 
         <div className="flex flex-col items-center justify-center mt-10 animate-bounce">
