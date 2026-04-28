@@ -5,6 +5,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CardStack, CardStackItem } from "@/components/ui/card-stack";
 import { SocialLinks } from "@/components/ui/social-links";
 import { JourneySection } from "@/components/journey-section";
+import { CalBooking } from "@/components/cal-booking";
 import { BottomNavBar } from "@/components/ui/bottom-nav-bar";
 
 const projects: CardStackItem[] = [
@@ -161,6 +162,9 @@ export default function Home() {
 
       {/* ── Journey Section ── */}
       <JourneySection />
+
+      {/* ── Booking ── */}
+      <CalBooking />
 
       {/* ── Footer ── */}
       <footer className="border-t border-zinc-100 py-8 px-6 text-center">

@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: "Home",     icon: Home,      href: "#hero"                              },
   { label: "Projects", icon: Briefcase, href: "#projects"                          },
   { label: "Journey",  icon: Map,       href: "#journey"                           },
-  { label: "Contact",  icon: Mail,      href: "mailto:suyashsawant1999@gmail.com"  },
+  { label: "Contact",  icon: Mail,      href: "#booking"                           },
 ];
 
 // Wide enough for "Projects" at text-xs

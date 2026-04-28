@@ -170,7 +170,7 @@ export function JourneySection() {
           </div>
 
           {/* Stacking cards */}
-          <ContainerScroll className="min-h-[600vh] space-y-6 py-12">
+          <ContainerScroll className="min-h-[280vh] space-y-6 py-12">
             {PROFESSIONAL.map((item, index) => (
               <CardSticky
                 key={item.id}
