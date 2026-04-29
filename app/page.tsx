@@ -13,12 +13,12 @@ import { HeroSlider } from "@/components/ui/hero-slider";
 const projects: CardStackItem[] = [
   {
     id: 1,
-    title: "Customer Churn Prediction",
+    title: "PJM Electricty Dynamic Pricing",
     description:
-      "ML pipeline using XGBoost to predict telecom churn with 92% accuracy — reduced retention cost by 18%.",
+      "A machine-learning framework for grid stability that balances peak-load reduction with consumer bill protection, achieving a 10% reduction in peak demand without increasing average costs.",
     imageSrc:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    href: "https://github.com/suyash0612",
+      "https://t3.ftcdn.net/jpg/04/40/72/54/360_F_440725469_f6IKLa3Kx5DAUB5O3i9iUKYUxw2qDqtS.jpg",
+    href: "https://github.com/suyash0612/PJM-Pricing",
     tag: "Machine Learning",
   },
   {
