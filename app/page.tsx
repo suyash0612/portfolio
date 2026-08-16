@@ -15,19 +15,20 @@ const projects: CardStackItem[] = [
     id: 1,
     title: "PJM Electricty Dynamic Pricing",
     description:
-      "A machine-learning framework for grid stability that balances peak-load reduction with consumer bill protection, achieving a 10% reduction in peak demand without increasing average costs.",
+      "IEEE Research 2026 - Modeling a Machine Learning and game theory framework for peak-load reduction along with consumer bill protection.",
     imageSrc:
       "https://t3.ftcdn.net/jpg/04/40/72/54/360_F_440725469_f6IKLa3Kx5DAUB5O3i9iUKYUxw2qDqtS.jpg",
-    href: "https://github.com/suyash0612/PJM-Pricing",
-    tag: "Machine Learning",
+    href: "https://ieeexplore.ieee.org/document/11540255",
+    tag: "ELT | Machine Learning | Game Theory",
   },
   {
     id: 2,
-    title: "NYC Taxi Demand Forecasting",
+    title: "Restaurant Chain Analytics Enginer",
     description:
-      "A dashboard forecasting NYC taxi demand using LSTM, improving dispatch efficiency by 15%.",
-    imageSrc: "https://cdn.cityandstateny.com/media/img/cd/2021/06/29/taxis_shutterstock-2/860x394.jpg",
-    tag: "Analytics",
+      "A data engineering and analytics solution for a restaurant chain, enabling data-driven decision-making and operational efficiency.",
+    imageSrc: "https://www.tastingtable.com/img/gallery/this-popular-restaurant-chain-started-in-the-mid-1960s-and-only-has-under-80-locations-left-what-happened/intro-1767530976.jpg",
+    href: "https://github.com/suyash0612/Restaurant-Chain-Insights",
+    tag: "Data Engineering | Analytics | KPIs | Sentiment Analysis",
   },
   {
     id: 3,
@@ -36,18 +37,18 @@ const projects: CardStackItem[] = [
       "Mango is an AI agent thats helps you summarize your daily important emails and messages",
     imageSrc:
       "https://mepiks.com/files/preview/1280x731/151747379697muxwmanlbiv2dgvw77nyjcgjknmppbrxvcogkladkg0nlqilz5gowabmyowuogmlo6ecmkmmvrtidijdrcpfgt43dnulub8jtgug.png?type=free",
-    href: "https://github.com/suyash0612",
-    tag: "Agentic AI",
+    href: "https://www.linkedin.com/posts/suyash-sawant-_meet-mango-an-ai-agent-i-created-as-ugcPost-7453961474491719680-Moz0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACw1Jz0BUGRr9PahSLAZ3m3bhNpfF1k0mg4",
+    tag: "Agentic AI | NanoClaw | MCP | Guardrails | LLMs",
   },
   {
     id: 4,
-    title: "Market Basket Analysis",
+    title: "Second Chance",
     description:
-      "Apriori association rule mining on retail transaction data to optimize product placement and bundling.",
+      "A patient-controlled medical history tracking app to save medical records and integrate EHR data to view a structured medical timeline and generate doctor-ready visit summaries.",
     imageSrc:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
-    href: "https://github.com/suyash0612",
-    tag: "Data Mining",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkZAyQEWpot4tt3gMJhTFM5H6A-HClt21Xbzbw-pEitU0J_rRhWLWs4rOg&s=10",
+    href: "https://www.linkedin.com/posts/suyash-sawant-_secondopinion-healthcare-uiuc-ugcPost-7451475698730418177-YsMX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACw1Jz0BUGRr9PahSLAZ3m3bhNpfF1k0mg4",
+    tag: "NLP | AI Agents | Heathcare Analytics | HIPAA | FHIR",
   },
   {
     id: 5,
@@ -57,7 +58,7 @@ const projects: CardStackItem[] = [
     imageSrc:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Y7HJmXlUZD-NuFpzilgWYw.png",
     href: "https://medium.com/@suyashsawant1999/risk-analysis-for-usdt-stablecoin-6dd2ccf86a7e",
-    tag: "Risk Analysis",
+    tag: "Risk Analysis | Guardrails | Stablecoins | Crypto | Blockchain",
   },
 ];
 
@@ -101,24 +102,21 @@ export default function Home() {
         <ContainerScroll
           titleComponent={
             <div className="space-y-3">
-              <p className="text-base md:text-lg font-medium text-white/50 uppercase tracking-widest">
-                Applied AI and Analytics Engineer
+              <p className="text-sm md:text-6xl font-medium text-white/100 tracking-tight">
+                Hey, I'm Suyash's Memoji
+              
               </p>
-              <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
-                Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
-                  Suyash Sawant
-                </span>
+              <h1 className="text-4xl md:text-2xl font-medium text-red-200 leading-tight">
+                I'm a digital avatar created using AI and Google FLow
               </h1>
-              <br />
-              {/* <p className="text-sm md:text-base text-white/60 max-w-md mx-auto">
-                Turning messy worklows into seamless experiences.
-              </p> */}
+    
             </div>
           }
         >
           <HeroSlider />
         </ContainerScroll>
+
+           
 
         <div className="flex flex-col items-center justify-center mt-10 animate-bounce">
           <span className="text-xs md:text-sm text-white/50 tracking-widest uppercase">
