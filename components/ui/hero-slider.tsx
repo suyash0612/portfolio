@@ -11,35 +11,35 @@ const SLIDES = [
     type: "video",
     alt: "Suyash Sawant",
     caption:
-      "So excited to meet you! Feel free to swipe to know more about Suyash.",
+      "Hey, I'm Suyash Sawant. So excited to meet you! Feel free to SWIPE to know more.",
   },
   {
     src: "/assests/uiuc.jpg",
     type: "image",
     alt: "Suyash Sawant",
     caption:
-      "This is me, I'm super friendly, talkative and creative. I graduted from University of Illinois Urbana-Champaign with a Masters in Business Analytics, Undergrad in telecommunications engineering. I hail from Mumbai, India and I specialize in working with data, technology, and business.",
+      "I'm super friendly, talkative and creative. I graduted from University of Illinois Urbana-Champaign with a Masters in Business Analytics, Undergrad in telecommunications engineering. I hail from Mumbai, India and I specialize in working with data, technology, and business.",
   },
   {
-    src: "/assests/conference.jpg",
+    src: "/assests/conference.png",
     type: "image",
     alt: "Suyash Sawant",
     caption:
-      "I like participating in competitions and pushing myself to new limits. I secured 3rd place at UIUC, competing with 20+ finalists at the Sustainability Case Competition 2026 to bridge funding opportunity between researchers and investors for sustainable solutions.",
+      "I like problem solving and thus I keep participating in various competitions to push myself to try new things. I secured 3rd place at UIUC, competing with 20+ finalists at the Sustainability Case Competition 2026 to bridge funding opportunity between researchers and investors for sustainable solutions.",
   },
   {
     src: "/assests/conference2.jpg",
     type: "image",
     alt: "Suyash Sawant",
     caption:
-      "Finalist at UIUC Cozad Hackathon 2026 showcasing an innovative solution to make medical history accessiblr to patients and doctors, leveraging AI and EHR integration for improved healthcare outcomes.",
+      "Finalist at UIUC Cozad Hackathon 2026 showcasing an innovative solution to make medical history accessible to patients and doctors, leveraging AI and EHR integration for improved healthcare outcomes.",
   },
   {
     src: "/assests/sih.webp",
     type: "image",
     alt: "Suyash Sawant",
     caption:
-      "Won Smart India Hackathon 2020, a national-level competition organized by the Government of India, for developing a product to prevent optical fiber breakage buried underground.",
+      "Won Smart India Hackathon 2020, a national-level competition organized by the Government of India, for building a product to prevent optical fiber cables breakage buried underground. Curiosity fuels me to experiment, fail, and learn. Feel to check some of my projects below.",
   },
 ];
 

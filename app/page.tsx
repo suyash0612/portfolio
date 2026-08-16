@@ -46,7 +46,7 @@ const projects: CardStackItem[] = [
     description:
       "A patient-controlled medical history tracking app to save medical records and integrate EHR data to view a structured medical timeline and generate doctor-ready visit summaries.",
     imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkZAyQEWpot4tt3gMJhTFM5H6A-HClt21Xbzbw-pEitU0J_rRhWLWs4rOg&s=10",
+      "https://prognocis.com/wp-content/uploads/2022/09/Data-collection-in-healthcare.jpeg",
     href: "https://www.linkedin.com/posts/suyash-sawant-_secondopinion-healthcare-uiuc-ugcPost-7451475698730418177-YsMX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACw1Jz0BUGRr9PahSLAZ3m3bhNpfF1k0mg4",
     tag: "NLP | AI Agents | Heathcare Analytics | HIPAA | FHIR",
   },
@@ -58,7 +58,17 @@ const projects: CardStackItem[] = [
     imageSrc:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Y7HJmXlUZD-NuFpzilgWYw.png",
     href: "https://medium.com/@suyashsawant1999/risk-analysis-for-usdt-stablecoin-6dd2ccf86a7e",
-    tag: "Risk Analysis | Guardrails | Stablecoins | Crypto | Blockchain",
+    tag: "Risk Analysis | Guardrails | Stablecoins",
+  },
+  {
+    id: 6,
+    title: "Starbucks Marketing Analytics",
+    description:
+      "Marketing analytics for In-house Illini Union Starbucks, analyzing customer behavior and preferences to optimize marketing strategies and enhance customer engagement.",
+    imageSrc:
+      "https://storage.googleapis.com/baileyedward-production/2021/05/6339be89-img_1828.jpg",
+    href: "https://www.linkedin.com/posts/suyash-sawant-_starbucks-marketinganalytics-consumerbehavior-share-7467271066550349825-vztv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACw1Jz0BUGRr9PahSLAZ3m3bhNpfF1k0mg4",
+    tag: "Prescriptive Analytics | Consumer Segmentation & Churn Analysis | Marketing Strategy",
   },
 ];
 
@@ -103,11 +113,11 @@ export default function Home() {
           titleComponent={
             <div className="space-y-3">
               <p className="text-sm md:text-6xl font-medium text-white/100 tracking-tight">
-                Hey, I'm Suyash's Memoji
+                {/* Hey, I'm Suyash Sawant */}
               
               </p>
               <h1 className="text-4xl md:text-2xl font-medium text-red-200 leading-tight">
-                I'm a digital avatar created using AI and Google FLow
+                {/* I'm a digital avatar created using AI and Google FLow */}
               </h1>
     
             </div>
@@ -152,7 +162,7 @@ export default function Home() {
               Projects
             </h2>
             <p className="text-white/60 text-base max-w-xl mx-auto">
-              A collection of engineering projects.
+              A collection of AI/ML, analytics and engineering projects. Click on the cards to know more.
             </p>
           </div>
 
